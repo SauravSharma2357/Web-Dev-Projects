@@ -8,7 +8,9 @@ This repository serves as a portfolio demonstrating my skills and experience in 
 
 Projects Included
 Project Name 1: My Portfolio.
+
 Project Name 2: ....
+
 Project Name 3: ....
 
 Each project is a testament to my growth, featuring responsive designs, interactive features, and efficient coding practices.
