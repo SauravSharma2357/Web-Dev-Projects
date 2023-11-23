@@ -50,7 +50,7 @@ p{
   line-height: 2;
 }
 
-hr{
+.horizontalLine{
   border: dotted #eaf6f6 6px;
   border-bottom: none;
   width: 5%;
@@ -58,7 +58,7 @@ hr{
 }
 
 .intro{
-  width: 30%;
+  width: 50%;
   margin: auto;
 }
 
@@ -72,6 +72,7 @@ hr{
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .card-imgs{
@@ -83,6 +84,7 @@ hr{
 .card{
   flex-grow: 1;
   flex-shrink: 1;
+  border: 0;
 }
 
 .card-text{
@@ -90,4 +92,34 @@ hr{
   align-content: center;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+}
+
+.bottom-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerElements{
+  margin-left: 30px;
+  margin-bottom: 0;
+  border: 2px solid #eaf6f6;
+  border-radius: 20%;
+  padding: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+hr{
+  margin-top: 25px;
+}
+
+.copyright{
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
 }
