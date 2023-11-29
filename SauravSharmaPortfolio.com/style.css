@@ -54,7 +54,8 @@ p{
   border: dotted #eaf6f6 6px;
   border-bottom: none;
   width: 5%;
-  margin: 100px auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .intro{
@@ -122,4 +123,20 @@ hr{
 
 a{
   text-decoration: none;
+}
+
+.diceGame{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 35px;
+}
+
+.diceGameCard img{
+  width: 400px;
+  height: 250px;
+  border-radius: 3%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border: 0;
 }
