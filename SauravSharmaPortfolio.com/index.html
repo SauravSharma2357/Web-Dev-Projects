@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <title>Saurav's Portfolio</title>
@@ -10,77 +10,131 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sacramento&display=swap"
       rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body >
-  <div class="top-container">
-    <img class="topCloud" src="./images/cloud.png"/>
-    <div class="title-text">
-      <h1>I'm Saurav.</h1>
-      <h2>a <span class="underLine">pro</span>grammer.</h2>
-    </div>
-    <img class="bottomCloud" src="./images/cloud2.png"/>
-    <img class="mountain" src="./images/mountain.png"/>
-  </div>
-  <div class="mid-container">
-    <div class="profile">
-      <img class="profile-pic" src="./images/Profile Picture.PNG"  alt="profile picture"/>
-      <h2>Hello.</h2>
-      <p class="intro">
-        I am a Passionate front-end developer with expertise in crafting visually appealing and user-centric websites. Proficient in HTML, CSS, and JavaScript, complemented by a strong foundation in SQL and hands-on experience with AWS cloud services. Additionally, adept at Java and data structure algorithms, bringing a versatile skill set to create seamless and efficient web experiences.</p>
-    </div>
-    <hr class="horizontalLine"/>
-  </div>
 
-  <div class="diceGame">
-    <div class="diceGameCard">
-      <a href="./webPages/miniGames/Dice Game/dicee.html"><img src="./webPages/miniGames/Dice Game/images/Thumbnail.png"/></a>
-      <div class="diceGameBody">
-        <p class="card-text underLine">Dice Game</p>
+  
+  <div class="top-container">
+    <div class="headerSection">
+      <div class="header">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-home"><a href="https://sauravsharmaportfolio.com/" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-projects"><a href="#" class="nav-link">Projects</a></li>
+            <li class="nav-github"><a href="https://github.com/SauravSharma2357" class="nav-link">GitHub</a></li>
+            <li class="nav-leetcode"><a href="https://leetcode.com/SauravSharma2357/" class="nav-link">LeetCode</a></li>
+            <li class="nav-resume" ><a href="https://docs.google.com/document/d/1w8EQzQ4BqAxkbmsZtWz2deXR_TwMYLTn/edit?usp=sharing&ouid=110003000584298156634&rtpof=true&sd=true" class="nav-link" >Resume</a></li>
+          </ul>
+        </header>
       </div>
+      <img class="bannerImage" src="./images/bannerImage.png">
+    </div>
+    <div class="introSection">
+      <div class="profile">
+        <img class="profilePicture" src="./images/Profile Picture.PNG"  alt="profile picture"/>
+      </div>
+      <div class="introDuction">
+        <h2 class="hello">Hello.</h2> 
+        <h1 class="saurav">I'm Saurav.</h1>
+        <p class="intro">
+           a Passionate front-end developer with expertise in crafting visually appealing and user-centric websites. Proficient in HTML, CSS, and JavaScript, complemented by a strong foundation in SQL and hands-on experience with AWS cloud services. Additionally, adept at Java and data structure algorithms, bringing a versatile skill set to create seamless and efficient web experiences.</p>
+      </div>   
     </div>
   </div>
 
   <hr class="horizontalLine"/>
 
-  <div class="cards">
-    <div class="card One">
-      <a href="https://github.com/SauravSharma2357/JAVA-DSA-projects"><img class="card-imgs" src="./images/DSA Projects.png"/></a> 
-      <div class="card-body">
-        <p class="card-text">Data Structures & Algorithms <span class="underLine">PROJECTS</span>.</p>
+  <div class="mid-container">
+
+    <div class="projects-section">
+      <h2 class="projects-section-heading">Web Development Projects</h2>
+      <div class="web-dev-projects">
+        <div class="diceGame">
+          <div class="miniGames card">
+            <a href="./webPages/miniGames/Dice Game/dicee.html"><img src="./webPages/miniGames/Dice Game/images/Thumbnail.png"/></a>
+            <div class="diceGameBody">
+              <p class="card-text">Dice Game</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="durmKit">
+          <div class="miniGames card">
+            <a href="./webPages/miniGames/Drum kit/index.html"><img src="./webPages/miniGames/Drum Kit/images/thumbnail.jpg"/></a>
+            <div class="drumKitBody">
+              <p class="card-text">Drum Kit</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="simonGame">
+          <div class="miniGames card">
+            <a href="./webPages/miniGames/Simon Game/index.html"><img src="./webPages/miniGames/Simon Game/images/thumbnail.gif"/></a>
+            <div class="simonGamebody">
+              <p class="card-text">Simon Game</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      
+      <h2 class="projects-section-heading">DSA Projects</h2>
+
+      <div class="dsa-projects">
+        <div class="github-projects">
+          <div class="githubproject card">
+            <a href="https://github.com/SauravSharma2357/JAVA-DSA-projects"><img src="./images/DSA Projects.png"/></a>
+            <div class="githubprojectBody">
+              <p class="card-text">DSA Projects</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <hr class="horizontalLine"/>
+
+    <div class="socials-section">
+
+      <div class="socials card">
+        <a href="https://github.com/SauravSharma2357/Web-Dev-Projects"><img class="card-imgs" src="./images/Web Development projects.webp"/></a>
+        <div class="socials-body">
+          <p class="card-text">More PROJECTS.</p>
+        </div>
+      </div>
+
+      <div class="socials card">
+        <a href="https://github.com/SauravSharma2357"><img class="card-imgs" src="./images/github.jpeg"/></a>
+        <div class="socials-body">
+          <p class="card-text">GitHub.</p>
+        </div>
+      </div>
+
+      <div class="socials card">
+        <a href="https://leetcode.com/SauravSharma2357/"><img class="card-imgs" src="./images/leetcode.png"/></a>
+        <div class="socials-body">
+          <p class="card-text">LeetCode.</p>
+        </div>
+      </div>
+
+    </div>
+
     
-    <div class="card Two">
-      <a href="https://github.com/SauravSharma2357/Web-Dev-Projects"><img class="card-imgs" src="./images/Web Development projects.webp"/></a> 
-      <div class="card-body">
-        <p class="card-text">Web Development <span class="underLine">PROJECTS</span>.</p>
-      </div>
-    </div>
-
-    <div class="card Three">
-      <a href="https://github.com/SauravSharma2357"><img class="card-imgs" src="./images/github.jpeg"/></a> 
-      <div class="card-body">
-        <p class="card-text"><span class="underLine">GitHub</span>.</p>
-      </div>
-    </div>
-
-    <div class="card Four">
-      <a href="https://leetcode.com/SauravSharma2357/"><img class="card-imgs" src="./images/leetcode.png"/></a> 
-      <div class="card-body">
-        <p class="card-text"><span class="underLine">LeetCode</span>.</p>
-      </div>
-    </div>
   </div>
 
   <hr class="horizontalLine"/>
 
   <div class="bottom-container">
-    <a href="https://sauravsharmaportfolio.com/"><p class="footerElements">Home</p></a>
-    <a href="https://www.linkedin.com/in/saurav-sharma-3ab56a249/"><p class="footerElements">Linkdin</p></a>
-    <a href="https://github.com/SauravSharma2357"><p class="footerElements">GitHub</p></a>
-    <a href="https://leetcode.com/SauravSharma2357/"><p class="footerElements">LeetCode</p></a>
+    <div class="footer-buttons">
+    <button class="btn btn-primary"><a href="https://sauravsharmaportfolio.com/"><p class="footer-buttons-text">Home</p></a></button>
+    <button class="btn btn-primary"><a href="https://www.linkedin.com/in/saurav-sharma-3ab56a249/"><p class="footer-buttons-text">Linkdin</p></a></button>
+    <button class="btn btn-primary"><a href="https://github.com/SauravSharma2357"><p class="footer-buttons-text">GitHub</p></a></a></button>
+    <button class="btn btn-primary"><a href="https://leetcode.com/SauravSharma2357/"><p class="footer-buttons-text">LeetCode</p></a></a></button>
+    </div>
   </div>
   <hr />
   <p class="copyright">© 2023 SauravSharma</p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

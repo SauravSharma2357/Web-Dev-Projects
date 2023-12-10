@@ -1,115 +1,158 @@
+html{
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+}
+
 body{
   color: #40514e;
   margin: 0;
   text-align: center;
-  font-family: "Merriweather", serif;
-}
-
-h1{
-  color: #66bfbf;
-  font-size: 5.625rem;
-  margin: 50px auto 0 auto;
-  font-family: "Sacramento", cursive;
-}
-
-h2{
-  color: #66bfbf;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  font-weight: normal;
-  padding-bottom: 10px;
-}
-
-.underLine{
-  text-decoration: underline;
-}
-
-.top-container{
-  background-color: #e4f9f5;
-  position: relative;
-  padding-top: 100px;
-}
-
-.topCloud{
-  position: absolute;
-  right: 300px;
-  top: 40px;
-}
-
-.bottomCloud{
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
-}
-
-.mid-container{
-  margin: 100px 0;
-}
-
-p{
-  line-height: 2;
 }
 
 .horizontalLine{
-  border: dotted #eaf6f6 6px;
+  border: dotted #eaf6f6 10px;
   border-bottom: none;
   width: 5%;
+  margin: auto;
   margin-bottom: 50px;
   margin-top: 50px;
 }
 
+
+/* ------------------------------------------------------------------------------ Top-Container ---------------------------------------------------------------------------------------------*/
+
+
+.top-container{
+  display: grid;
+  grid-template-rows: auto;
+  gap: 30px;
+}
+
+.header{
+  background-color: #212529;
+}
+
+.introSection{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+}
+
+.introDuction{
+  margin-right: 20px;
+}
+
+.profilePicture{
+  height: 300px;
+  width: 300px;
+  border-radius: 10%;
+  border: 10px solid #40514e;
+  margin-left: 10px;
+}
+
+.hello{
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
 .intro{
-  width: 50%;
-  margin: auto;
+  text-align: justify;
+  font-weight: 500;
+  font-size: larger ;
+  flex: 1;
+  line-height: 1.7;
 }
 
-.profile-pic{
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+.saurav{
+  font-family: "Sacramento", cursive;
+  font-size: 2.9rem;
+  font-weight:bolder;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
-.cards{
+
+/* ------------------------------------------------------------------------------ Mid-Container ---------------------------------------------------------------------------------------------*/
+
+
+.mid-container{
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 100px;
+  flex-direction: column;
 }
 
-.card-imgs{
-  width: 400px;
+.card img{
   height: 250px;
-  border-radius: 3%;
-}
-
-.card{
-  flex-grow: 1;
-  flex-shrink: 1;
-  border: 0;
+  width: 400px;
+  border-radius: 4%;
 }
 
 .card-text{
-  font-size: 20px;
-  align-content: center;
+  font-size: 25px;
+  text-align: center;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
 }
+
+
+.projects-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-section-heading{
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: underline #DEE2E6;
+}
+
+.web-dev-projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dsa-projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.socials-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+/* ------------------------------------------------------------------------------ Mid-Container ---------------------------------------------------------------------------------------------*/
+
 
 .bottom-container{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.footerElements{
-  margin-left: 30px;
-  margin-bottom: 0;
-  border: 2px solid #eaf6f6;
-  border-radius: 20%;
-  padding: 3px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: black;
+.footer-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-buttons p{
+  color: white;
+  margin: auto;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footer-buttons a{
   text-decoration: none;
 }
 
@@ -119,24 +162,5 @@ hr{
 
 .copyright{
   font-weight: bold;
-}
-
-a{
-  text-decoration: none;
-}
-
-.diceGame{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 35px;
-}
-
-.diceGameCard img{
-  width: 400px;
-  height: 250px;
-  border-radius: 3%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  border: 0;
+  text-align: center;
 }
