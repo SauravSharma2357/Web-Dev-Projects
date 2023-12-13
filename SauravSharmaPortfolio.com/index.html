@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Saurav's Portfolio</title>
@@ -17,18 +17,18 @@
   
   <div class="top-container">
     <div class="headerSection">
-      <div class="header">
-        <header class="d-flex justify-content-center py-3">
-          <ul class="nav nav-pills">
-            <li class="nav-home"><a href="https://sauravsharmaportfolio.com/" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-projects"><a href="#" class="nav-link">Projects</a></li>
-            <li class="nav-github"><a href="https://github.com/SauravSharma2357" class="nav-link">GitHub</a></li>
-            <li class="nav-leetcode"><a href="https://leetcode.com/SauravSharma2357/" class="nav-link">LeetCode</a></li>
-            <li class="nav-resume" ><a href="https://docs.google.com/document/d/1w8EQzQ4BqAxkbmsZtWz2deXR_TwMYLTn/edit?usp=sharing&ouid=110003000584298156634&rtpof=true&sd=true" class="nav-link" >Resume</a></li>
-          </ul>
-        </header>
-      </div>
-      <img class="bannerImage" src="./images/bannerImage.png">
+      <nav>
+        <img class="bannerImage" src="./images/bannerImage.png">
+        <ul>
+          <li class="navItems"><a href="https://sauravsharmaportfolio.com/">Home</a></li>
+          <li class="navItems"><a href="https://github.com/SauravSharma2357">GitHub</a></li>
+          <li class="navItems"><a href="https://www.linkedin.com/in/saurav-sharma-3ab56a249/">Linkdin</a></li>
+          <li class="navItems"><a href="https://leetcode.com/SauravSharma2357/">LeetCode</a></li>
+          <li class="navItems"><a href="https://codeskiller.codingblocks.com/users/359502">CodeSkiller</a></li>
+          <li class="navItems"><a style="color: greenyellow;" href="https://drive.google.com/file/d/1bmCf4nm4B3R6RsAGNHREOVBiY1kCp5dM/view?usp=sharing">Resume</a></li>
+        </ul>
+        
+      </nav>
     </div>
     <div class="introSection">
       <div class="profile">
@@ -48,33 +48,52 @@
   <div class="mid-container">
 
     <div class="projects-section">
-      <h2 class="projects-section-heading">Web Development Projects</h2>
+      <h2 class="projects-section-heading-h2">Web Development Projects</h2>
       <div class="web-dev-projects">
-        <div class="diceGame">
-          <div class="miniGames card">
-            <a href="./webPages/miniGames/Dice Game/dicee.html"><img src="./webPages/miniGames/Dice Game/images/Thumbnail.png"/></a>
-            <div class="diceGameBody">
-              <p class="card-text">Dice Game</p>
+        <h3 class="projects-heading">Cloned Websites :</h3>
+        <div class="clonedWebsites">
+
+          <div class="Spotify">
+            <div class="thumbnails">
+              <a href="./webPages/clonedWebsites/Spotify Clone/index.html"><img src="./webPages/clonedWebsites/Spotify Clone/spotify.jpg"/></a>
+              <div class="spotifyBody">
+                <p class="card-text">Spotify</p>
+              </div>
             </div>
           </div>
+
         </div>
-  
-        <div class="durmKit">
-          <div class="miniGames card">
-            <a href="./webPages/miniGames/Drum kit/index.html"><img src="./webPages/miniGames/Drum Kit/images/thumbnail.jpg"/></a>
-            <div class="drumKitBody">
-              <p class="card-text">Drum Kit</p>
+
+        <h3 class="projects-heading">Mini Games :</h3>
+        <div class="miniGames">
+
+          <div class="diceGame">
+            <div class="thumbnails">
+              <a href="./webPages/miniGames/Dice Game/dicee.html"><img src="./webPages/miniGames/Dice Game/images/Thumbnail.png"/></a>
+              <div class="diceGameBody">
+                <p class="card-text">Dice Game</p>
+              </div>
             </div>
           </div>
-        </div>
-  
-        <div class="simonGame">
-          <div class="miniGames card">
-            <a href="./webPages/miniGames/Simon Game/index.html"><img src="./webPages/miniGames/Simon Game/images/thumbnail.gif"/></a>
-            <div class="simonGamebody">
-              <p class="card-text">Simon Game</p>
+    
+          <div class="durmKit">
+            <div class="thumbnails">
+              <a href="./webPages/miniGames/Drum kit/index.html"><img src="./webPages/miniGames/Drum Kit/images/thumbnail.jpg"/></a>
+              <div class="drumKitBody">
+                <p class="card-text">Drum Kit</p>
+              </div>
             </div>
           </div>
+    
+          <div class="simonGame">
+            <div class="thumbnails">
+              <a href="./webPages/miniGames/Simon Game/index.html"><img src="./webPages/miniGames/Simon Game/images/thumbnail.gif"/></a>
+              <div class="simonGamebody">
+                <p class="card-text">Simon Game</p>
+              </div>
+            </div>
+          </div>
+
         </div>
   
       </div>
@@ -83,7 +102,7 @@
 
       <div class="dsa-projects">
         <div class="github-projects">
-          <div class="githubproject card">
+          <div class="thumbnails">
             <a href="https://github.com/SauravSharma2357/JAVA-DSA-projects"><img src="./images/DSA Projects.png"/></a>
             <div class="githubprojectBody">
               <p class="card-text">DSA Projects</p>
@@ -97,21 +116,21 @@
 
     <div class="socials-section">
 
-      <div class="socials card">
+      <div class="thumbnails">
         <a href="https://github.com/SauravSharma2357/Web-Dev-Projects"><img class="card-imgs" src="./images/Web Development projects.webp"/></a>
         <div class="socials-body">
           <p class="card-text">More PROJECTS.</p>
         </div>
       </div>
 
-      <div class="socials card">
+      <div class="thumbnails">
         <a href="https://github.com/SauravSharma2357"><img class="card-imgs" src="./images/github.jpeg"/></a>
         <div class="socials-body">
           <p class="card-text">GitHub.</p>
         </div>
       </div>
 
-      <div class="socials card">
+      <div class="thumbnails">
         <a href="https://leetcode.com/SauravSharma2357/"><img class="card-imgs" src="./images/leetcode.png"/></a>
         <div class="socials-body">
           <p class="card-text">LeetCode.</p>
@@ -127,10 +146,7 @@
 
   <div class="bottom-container">
     <div class="footer-buttons">
-    <button class="btn btn-primary"><a href="https://sauravsharmaportfolio.com/"><p class="footer-buttons-text">Home</p></a></button>
-    <button class="btn btn-primary"><a href="https://www.linkedin.com/in/saurav-sharma-3ab56a249/"><p class="footer-buttons-text">Linkdin</p></a></button>
-    <button class="btn btn-primary"><a href="https://github.com/SauravSharma2357"><p class="footer-buttons-text">GitHub</p></a></a></button>
-    <button class="btn btn-primary"><a href="https://leetcode.com/SauravSharma2357/"><p class="footer-buttons-text">LeetCode</p></a></a></button>
+    <button class="btn btn-success"><a href="mailto:sauravsharma2357@gmail.com"><p class="footer-buttons-text">Contact Me</p></a></button>
     </div>
   </div>
   <hr />

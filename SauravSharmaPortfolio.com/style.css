@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 html{
   font-size: 20px;
   font-family: "Merriweather", serif;
+  background-color: #212529;
 }
 
 body{
-  color: #40514e;
-  margin: 0;
   text-align: center;
+  color: #212529;
 }
 
 .horizontalLine{
-  border: dotted #eaf6f6 10px;
+  border: dotted black 10px;
   border-bottom: none;
   width: 5%;
   margin: auto;
@@ -21,6 +28,29 @@ body{
 
 /* ------------------------------------------------------------------------------ Top-Container ---------------------------------------------------------------------------------------------*/
 
+nav{
+  font-family: 'ubuntu', sans-serif;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  height: 70px;
+  background-color: black;
+  color: white;
+}
+
+nav ul li{
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.navItems a{
+  color: aliceblue;
+  text-decoration: none;
+}
 
 .top-container{
   display: grid;
@@ -28,25 +58,21 @@ body{
   gap: 30px;
 }
 
-.header{
-  background-color: #212529;
+.bannerImage{
 }
 
 .introSection{
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
   gap: 40px;
-}
-
-.introDuction{
-  margin-right: 20px;
+  width: 90%;
+  margin: auto;
 }
 
 .profilePicture{
   height: 300px;
   width: 300px;
-  border-radius: 10%;
-  border: 10px solid #40514e;
+  border-radius: 15%;
+  border: 6px solid black;
   margin-left: 10px;
 }
 
@@ -81,9 +107,11 @@ body{
 .mid-container{
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin: auto;
 }
 
-.card img{
+.thumbnails img{
   height: 250px;
   width: 400px;
   border-radius: 4%;
@@ -103,30 +131,52 @@ body{
   flex-direction: column;
 }
 
-.projects-section-heading{
-  margin: auto;
+.projects-section-heading-h2{
   margin-top: 50px;
-  margin-bottom: 50px;
-  text-decoration: underline #DEE2E6;
+  margin-bottom: 20px;
+  text-decoration: underline #000000;
+}
+
+.projects-heading{
+  margin-bottom: 15px;
+  text-decoration: underline dashed #000000;
 }
 
 .web-dev-projects{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.clonedWebsites{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+
+.miniGames{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .dsa-projects{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 
 .socials-section{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 
