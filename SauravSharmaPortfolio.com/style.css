@@ -28,8 +28,13 @@ body{
 
 /* ------------------------------------------------------------------------------ Top-Container ---------------------------------------------------------------------------------------------*/
 
+.theme{
+  background-color: #212529;
+}
+
 nav{
   font-family: 'ubuntu', sans-serif;
+  clear: both;
 }
 
 nav ul{
@@ -59,13 +64,50 @@ nav ul li{
 }
 
 .bannerImage{
+  background-color: #FFDE59;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bannerImageElements{
+  margin-left: 20px;
+  margin-right: auto;
+  height: 300px;
+}
+
+.bannerImagText{
+  margin-right: 20px;
+  margin-left: auto;
+  height: 350px;
 }
 
 .introSection{
   display: flex;
+  align-items: center;
   gap: 40px;
   width: 90%;
   margin: auto;
+}
+
+#themeButton{
+  float: right;
+  border-radius: 10%;
+  padding: 0.5%;
+  color: greenyellow;
+  background-color: #212529;
+  cursor: pointer;
+}
+
+.darkTheme{
+  background-color: #212529;
+  color: white;
+}
+
+.buttonColorChange{
+  background-color: white;
+  color: black;
 }
 
 .profilePicture{
