@@ -38,7 +38,14 @@
         <img class="profilePicture" src="./images/Profile Picture.PNG"  alt="profile picture"/>
       </div>
       <div class="introDuction">
-        <button id="themeButton">Theme</button>
+        <div class="themeButton">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
         <h2 class="hello">Hello.</h2> 
         <h1 class="saurav">I'm Saurav.</h1>
         <p class="intro">
@@ -54,14 +61,23 @@
     <div class="projects-section">
       <h2 class="projects-section-heading-h2">Web Development Projects</h2>
       <div class="web-dev-projects">
-        <h3 class="projects-heading">Cloned Websites :</h3>
+        <h3 class="projects-heading">Front-End Projects :</h3>
         <div class="clonedWebsites">
 
-          <div class="Spotify">
+          <div class="Spotify containerBody">
             <div class="thumbnails">
               <a href="./webPages/clonedWebsites/Spotify Clone/index.html"><img src="./webPages/clonedWebsites/Spotify Clone/spotify.jpg"/></a>
               <div class="spotifyBody">
-                <p class="card-text">Spotify</p>
+                <p class="card-text">Spotify Clone</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ImageSearchWebsite containerBody">
+            <div class="thumbnails">
+              <a href="./webPages/Front-End Projects/Image Search Website using unsplash Api/index.html"><img src="./webPages/Front-End Projects/Image Search Website using unsplash Api/Thumbnail.jpg"/></a>
+              <div class="ImageSearchWebsiteBody">
+                <p class="card-text">Image Search Website</p>
               </div>
             </div>
           </div>
@@ -71,7 +87,7 @@
         <h3 class="projects-heading">Mini Games :</h3>
         <div class="miniGames">
 
-          <div class="diceGame">
+          <div class="diceGame containerBody">
             <div class="thumbnails">
               <a href="./webPages/miniGames/Dice Game/dicee.html"><img src="./webPages/miniGames/Dice Game/images/Thumbnail.png"/></a>
               <div class="diceGameBody">
@@ -80,7 +96,7 @@
             </div>
           </div>
     
-          <div class="durmKit">
+          <div class="durmKit containerBody">
             <div class="thumbnails">
               <a href="./webPages/miniGames/Drumkit/index.html"><img src="./webPages/miniGames/DrumKit/images/thumbnail.jpg"/></a>
               <div class="drumKitBody">
@@ -89,7 +105,7 @@
             </div>
           </div>
     
-          <div class="simonGame">
+          <div class="simonGame containerBody">
             <div class="thumbnails">
               <a href="./webPages/miniGames/Simon Game/index.html"><img src="./webPages/miniGames/Simon Game/images/thumbnail.gif"/></a>
               <div class="simonGamebody">
@@ -102,9 +118,9 @@
   
       </div>
       
-      <h2 class="projects-section-heading">DSA Projects</h2>
+      <h2 class="projects-section-heading-h2">DSA Projects</h2>
 
-      <div class="dsa-projects">
+      <div class="dsa-projects containerBody">
         <div class="github-projects">
           <div class="thumbnails">
             <a href="https://github.com/SauravSharma2357/JAVA-DSA-projects"><img src="./images/DSA Projects.png"/></a>
@@ -120,21 +136,21 @@
 
     <div class="socials-section">
 
-      <div class="thumbnails">
+      <div class="thumbnails containerBody">
         <a href="https://github.com/SauravSharma2357/Web-Dev-Projects"><img class="card-imgs" src="./images/Web Development projects.webp"/></a>
         <div class="socials-body">
           <p class="card-text">More PROJECTS.</p>
         </div>
       </div>
 
-      <div class="thumbnails">
+      <div class="thumbnails containerBody">
         <a href="https://github.com/SauravSharma2357"><img class="card-imgs" src="./images/github.jpeg"/></a>
         <div class="socials-body">
           <p class="card-text">GitHub.</p>
         </div>
       </div>
 
-      <div class="thumbnails">
+      <div class="thumbnails containerBody">
         <a href="https://leetcode.com/SauravSharma2357/"><img class="card-imgs" src="./images/leetcode.png"/></a>
         <div class="socials-body">
           <p class="card-text">LeetCode.</p>
@@ -155,6 +171,7 @@
   </div>
   <hr />
   <p class="copyright">© 2023 SauravSharma</p>
+  <script src="https://kit.fontawesome.com/cfd116bd5e.js" crossorigin="anonymous"></script>
   <script src="./index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
